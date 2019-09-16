@@ -37,9 +37,19 @@ const totalArray = [raphTotal(140), raphTotal(45), raphTotal(270)]
 ///array method
 
 //filter function
+function isAboveHundred(value) {
+    return value > 100;
+}
 
-//array method
-const copyArray = totalArray.filer();
+//filter method
+const copyArray = totalArray.filter(isAboveHundred);
 
+
+///printout
+
+console.log("The amount Raphael will tip is:");
 console.log(tipArray[0], tipArray[1], tipArray[2]);
+console.log("The amount Raphael will pay in total is:");
 console.log(totalArray[0], totalArray[1], totalArray[2]);
+console.log("The part that proves I used an array filter method for bills over $100 is:");
+console.log(copyArray[0], copyArray[1]);
