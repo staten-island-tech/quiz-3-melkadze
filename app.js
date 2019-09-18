@@ -53,3 +53,43 @@ console.log("The amount Raphael will pay in total is:");
 console.log(totalArray[0], totalArray[1], totalArray[2]);
 console.log("The part that proves I used an array filter method for bills over $100 is:");
 console.log(copyArray[0], copyArray[1]);
+
+
+
+
+///////quiz four
+
+//step four
+//console.log(`Does Rob, who is ${massRob}kg and ${heightRob}m with a BMI of ${bmiRob}, have a higher BMI than that of Dejon, with ${massDejon}kg and ${heightDejon}m with a BMI of ${bmiDejon}? The answer is ${robHigherBMI}!`);
+
+console.log("On a completely unrelated note:");
+
+const rob = {
+    fullName: 'Robert Grande',
+    mass: 78,
+    height: 1.69,
+    getBMI: function(){
+        bmi = (this.mass / ((this.height) * (this.height)))
+        return bmi;
+    }
+}
+
+const dejon = {
+    fullName: 'Dejonious Kurticle',
+    mass: 110,
+    height: 1.95,
+    getBMI: function(){
+        bmi = (this.mass / ((this.height) * (this.height)))
+        return bmi;
+    }
+}
+
+console.log(`Does ${rob.fullName}, with a BMI of ${rob.getBMI()}, have a higher BMI than that of ${dejon.fullName}, with a BMI of ${dejon.getBMI()}?`);
+
+if (dejon.getBMI() > rob.getBMI()) {
+    console.log("Nope!");
+} else if (dejon.bmi < rob.bmi) {
+    console.log("Yep!");
+} else {
+    console.log("They're tied!");
+}
