@@ -69,7 +69,7 @@ const rob = {
     mass: 78,
     height: 1.69,
     getBMI: function(){
-        bmi = (this.mass / ((this.height) * (this.height)))
+        bmi = (this.mass / ((this.height) * (this.height)));
         return bmi;
     }
 }
@@ -79,7 +79,7 @@ const dejon = {
     mass: 110,
     height: 1.95,
     getBMI: function(){
-        bmi = (this.mass / ((this.height) * (this.height)))
+        bmi = (this.mass / ((this.height) * (this.height)));
         return bmi;
     }
 }
